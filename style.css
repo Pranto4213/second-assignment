@@ -1,7 +1,7 @@
 
 
 /* nav-style */
-.nav, .header, .habit {
+.nav, .header, .habit, .join-section {
     width: 1080px;
     margin: 0 auto;
 }
@@ -102,9 +102,7 @@ body{
 }
 
 /* habit style */
-.habit-container{
-   margin-top: -100px;
-}
+
 .habit-title{margin: 0px;
     text-align: center;
     font-size: 3rem;
@@ -130,27 +128,56 @@ justify-content:space-evenly ;}
     color: rgba(255, 255, 255, 0.5);
 
 }
+/* join style */
 
+.join-container{
+    display: flex;justify-content: space-between;
+    background-color: rgb(35, 35, 35);padding: 40px;border-radius: 10px;
+}
 
+.join-img{border-radius: 10px;
+    width: 360px;                
+    height: 312px;
+}
+.join-content{
+    width: 440px;
+    height: 290px;
+}
+.join-title{
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+.join-discreption{
+     color: rgba(255, 255, 255, 0.5);
+}
+.join-btn{
+    background-color: #E6533C;
+    color: white;font-size: 1.5rem;padding: 5px 15px;
+    border-radius: 20px;
+}
+/* bmi-style */
+.bmi-con{
+    width: 650px;
+}
+.bmi-title{font-size: 4rem;margin: none;}
+.bmi-discreption{margin: none;
+     color: rgba(255, 255, 255, 0.5);
+}
 
-
-
-
-
-
-
-
-
-
+.bmi-cel{
+    display: flex;
+    justify-content: center;
+}
+.
 
 
 
 
 @media screen and (max-width:576px) {
     .nav, .head-img, .head-content,
-    .habit {
-        width: 100%;
-    }
+    .habit{
+        width: 100%;}
+
     .nav-a a, #card-icon{
         display: none;
     }
@@ -191,4 +218,14 @@ padding: 10px;width:170px;height: 60px;}
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
 }
+.join-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.join-container{
+    width: 32%;
+}
+.join-discreption{width: 80%;}
+.join-img{
+    margin-top: 50px;
 }
